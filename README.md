@@ -1,6 +1,7 @@
 # 3D-Rendering-Engine-in-C
 WindowsApi<br/>
 written in C
+I have not cleaned up the code yet!
 # Contorl
 Up       : space <br/>
 Down     : shift <br/>
