@@ -1,16 +1,16 @@
 #include "main.h"
 
-int data[10000][2]; //Á¡ÇÁ
-int datalong = 0;
+//int data[10000][2]; //ì í”„
+//int datalong = 0;
 int cnt = 0;
 
 void main() {
-	setup(); //ÄÜ¼Ö¼Â
-	_player player; //ÇÃ·¹ÀÌ¾î
-	_cube cube; //Á¤À°¸éÃ¼
-	//dif_cubeset; //Á¤À°¸éÃ¼ ¼±¾ğ main.h define Âü°í
+	setup(); //ì½˜ì†”ì…‹
+	_player player; //í”Œë ˆì´ì–´
+	_cube cube; //ì •ìœ¡ë©´ì²´
+	//dif_cubeset; //ì •ìœ¡ë©´ì²´ ì„ ì–¸ main.h define ì°¸ê³ 
 
-	//µµÇü ¼±¾ğ
+	//ë„í˜• ì„ ì–¸
 	int cubeline[12][2] = { { 0,1 },{ 2,3 },{ 0,2 },{ 1,3 },{ 4,6 },{ 5,7 },{ 4,5 },{ 6,7 },{ 0,4 },{ 1,5 },{ 2,6 },{ 3,7 } };
 	cube.p[0].z = 5; cube.p[0].x = 0; cube.p[0].y = -5;
 	cube.p[1].z = 10; cube.p[1].x = 0; cube.p[1].y = -5;
@@ -39,18 +39,18 @@ void main() {
 	figure3.p[6].z = 2.5; figure3.p[6].x = 12.5; figure3.p[6].y = -9;
 	figure3.p[7].z = 2.5; figure3.p[7].x = 12.5; figure3.p[7].y = -9;
 	int c = 0;
-	for (int i = 0; i < 8; i++) { //¹Ì¸® angle°è»êÇØ¼­ ÁÂÇ¥ ±¸ÇØµÎ±â
+	for (int i = 0; i < 8; i++) { //ë¯¸ë¦¬ angleê³„ì‚°í•´ì„œ ì¢Œí‘œ êµ¬í•´ë‘ê¸°
 		cube.p[i] = get_Apoint(cube.p[i], player);
 		figure2.p[i] = get_Apoint(figure2.p[i], player);
 		figure3.p[i] = get_Apoint(figure3.p[i], player);
 	}
 	while (1) {
-		//p = -d cos(s + ¥ğ / 2)
-		//q = d sin(s + ¥ğ / 2)
-		//p = d cos(s + ¥ğ)
-		//q = -d sin(s + ¥ğ)
-		//p = -d cos(s - ¥ğ / 2)
-		//q = d sin(s - ¥ğ / 2)
+		//p = -d cos(s + Ï€ / 2)
+		//q = d sin(s + Ï€ / 2)
+		//p = d cos(s + Ï€)
+		//q = -d sin(s + Ï€)
+		//p = -d cos(s - Ï€ / 2)
+		//q = d sin(s - Ï€ / 2)
 		//p = d cos(s)
 		//q = -d sin(s)
 		bool chk = 0;
@@ -136,8 +136,8 @@ void main() {
 			}
 			chk = false;
 		}
-		for (int i = 0; i < 8; i++) { //Àü-¿ùµå ÁÂÇ¥°è(±âÁØ 0,0,0)  Çö-Ä«¸Ş¶ó ÁÂÇ¥°è(±âÁØ player member x,y,z)
-			//if (cube.p[i].z <= player.z)cube.p[i].dx = INF; //ÇØ´ç Æ÷ÀÎÆ®°¡ ÇÃ·¹ÀÌ¾îº¸´Ù µÚ¿¡ÀÕÀ½
+		for (int i = 0; i < 8; i++) { //ì „-ì›”ë“œ ì¢Œí‘œê³„(ê¸°ì¤€ 0,0,0)  í˜„-ì¹´ë©”ë¼ ì¢Œí‘œê³„(ê¸°ì¤€ player member x,y,z)
+			//if (cube.p[i].z <= player.z)cube.p[i].dx = INF; //í•´ë‹¹ í¬ì¸íŠ¸ê°€ í”Œë ˆì´ì–´ë³´ë‹¤ ë’¤ì—ì‡ìŒ
 			if (0);
 			else {
 				cube.p[i].dx = (((cube.p[i].ax - player.x) * 50) / (cube.p[i].az - player.z) + 50);
@@ -154,7 +154,8 @@ void main() {
 			//cube.p[i].dy += Vrad*100;
 		}
 
-		//system("cls"); //ÈÄ º¯°æ
+		system("cls"); //í›„ ë³€ê²½
+		/* jump*cls
 		if (cnt == 10)system("cls");
 		else {
 			for (int i = 0; i < datalong; i++) {
@@ -164,6 +165,7 @@ void main() {
 			datalong = 0;
 			cnt++;
 		}
+		*/
 
 		for (int i = 0; i < 12; i++) {
 			drawLine(cube.p[cubeline[i][0]].dx, cube.p[cubeline[i][0]].dy, cube.p[cubeline[i][1]].dx, cube.p[cubeline[i][1]].dy);
