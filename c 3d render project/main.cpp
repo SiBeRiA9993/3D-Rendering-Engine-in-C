@@ -176,7 +176,7 @@ void main() {
 		//drawLine(100, 0, 100, 45);
 		double Hrad = (double)player.H_angle*(PI / 180);
 		double Vrad = (double)player.V_angle*(PI / 180);
-		showXY(cube, player,Hrad,Vrad);
+		//showXY(cube, player,Hrad,Vrad);
 		Sleep(10);
 	}
 	return;
