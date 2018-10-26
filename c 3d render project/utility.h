@@ -5,6 +5,6 @@
 
 void gotoxy(int x, int y);
 void swap(int *x, int *y);
-void showXY(_cube cube, _player player, double Hrad, double Vrad);
+//void showXY(_cube cube, _player player, double Hrad, double Vrad);
 
 #endif
