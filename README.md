@@ -19,10 +19,10 @@ Horizontal_rotation * Vertical_rotation <br/>
 ![code_2](https://github.com/SiBeRiA9993/3D-Rendering-Engine-in-C/blob/master/ScreenShot/IC2.png)
 ### Moving Coordinate Calculation
 ![code_3](https://github.com/SiBeRiA9993/3D-Rendering-Engine-in-C/blob/master/ScreenShot/IC3.png)
-Let "Horizontal rotation" be "H"and "Distance traveled" be "D"<br/>
-The player's "Horizontal rotation" value is stored in degree,<br/>
-and it should be calculated in radian.<br/>
-Therefore, H = (Horizontal rotation) * (PI / 180).
+Let "Horizontal rotation" be "H"and "Distance traveled" be "D" <br/>
+The player's "Horizontal rotation" value is stored in degree, <br/>
+So, when calculating, it should be calculated as radian value. <br/>
+Therefore, H = (Horizontal rotation) * (PI / 180). <br/>
 ### When moving forward <br/>
 player_x += cos(H+(π/2))*(-D) <br/>
 player_z += sin(H+(π/2))*D <br/>
