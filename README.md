@@ -12,6 +12,8 @@ Rotation : ↑,↓,←,→ <br/>
 ![screenshot_2](https://github.com/SiBeRiA9993/3D-Rendering-Engine-in-C/blob/master/ScreenShot/SS2.png)
 ![screenshot_3](https://github.com/SiBeRiA9993/3D-Rendering-Engine-in-C/blob/master/ScreenShot/SS3.png)
 # Main&Important Code
+### Coordinate_axis in this project
+![Coordinate_axis](https://github.com/SiBeRiA9993/3D-Rendering-Engine-in-C/blob/master/ScreenShot/Coordinate_axis.png)
 ### Rotation matrix
 ![code_1](https://github.com/SiBeRiA9993/3D-Rendering-Engine-in-C/blob/master/ScreenShot/IC1.png)
 Horizontal_rotation * Vertical_rotation <br/>
