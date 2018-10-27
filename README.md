@@ -24,14 +24,14 @@ The player's "Horizontal rotation" value is stored in degree, <br/>
 So, when calculating, it should be calculated as radian value. <br/>
 Therefore, H = (Horizontal rotation) * (PI / 180). <br/>
 ### When moving forward <br/>
-player_x += cos(H+(π/2))*(-D) <br/>
-player_z += sin(H+(π/2))*D <br/>
+player_x += cos(H + (π / 2)) * (-D) <br/>
+player_z += sin(H + (π / 2)) * D <br/>
 ### When moving backward <br/>
-player_x += cos(H-(π/2))*(-D) <br/>
-player_z += sin(H-(π/2))*D <br/>
+player_x += cos(H - (π / 2)) * (-D) <br/>
+player_z += sin(H - (π / 2)) * D <br/>
 ### When moving left <br/>
-player_x += cos(H+π)*D <br/>
-player_z += sin(H+π)*(-D) <br/>
+player_x += cos(H + π) * D <br/>
+player_z += sin(H + π) * (-D) <br/>
 ### When moving right <br/>
-player_x += cos(H)*D <br/>
-player_z += sin(H)*(-D) <br/>
+player_x += cos(H) * D <br/>
+player_z += sin(H) * (-D) <br/>
