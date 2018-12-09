@@ -1,8 +1,8 @@
 # 3D-Rendering-Engine-in-C
-WindowsApi<br/>
+with WindowsApi<br/>
 written in C<br/>
 I have not cleaned up the code yet!
-# Contorl
+# Control
 Up       : space <br/>
 Down     : shift <br/>
 Move     : w,a,s,d <br/>
@@ -28,6 +28,7 @@ Therefore, H = (Horizontal rotation) * (PI / 180). <br/>
 ### When moving forward <br/>
 player_x += cos(H + (π / 2)) * (-D) <br/>
 player_z += sin(H + (π / 2)) * D <br/>
+<p>*</p> <p>*</p>
 ### When moving backward <br/>
 player_x += cos(H - (π / 2)) * (-D) <br/>
 player_z += sin(H - (π / 2)) * D <br/>
