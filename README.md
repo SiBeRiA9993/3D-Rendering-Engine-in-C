@@ -28,7 +28,6 @@ Therefore, H = (Horizontal rotation) * (PI / 180). <br/>
 ### When moving forward <br/>
 player_x += cos(H + (π / 2)) * (-D) <br/>
 player_z += sin(H + (π / 2)) * D <br/>
-<br>*ㅇ아아*<br/>
 ### When moving backward <br/>
 player_x += cos(H - (π / 2)) * (-D) <br/>
 player_z += sin(H - (π / 2)) * D <br/>
