@@ -1,7 +1,8 @@
 # 3D-Rendering-Engine-in-C
 with WindowsApi<br/>
 written in C<br/>
-I have not cleaned up the code yet!
+This is a 3-hour project in 2017<br/>
+I have not cleaned up the code
 # Control
 Up       : space <br/>
 Down     : shift <br/>
