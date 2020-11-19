@@ -2,7 +2,7 @@
 with WindowsApi<br/>
 written in C<br/>
 This is a 3-hour project in 2017<br/>
-I have not cleaned up the code
+I haven't cleaned up the code yet
 # Control
 Up       : space <br/>
 Down     : shift <br/>
